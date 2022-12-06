@@ -1,0 +1,45 @@
+
+p {
+    font-size: 14px;
+}
+
+.about-top {
+    display: flex;
+    flex-wrap: wrap;    
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #000;
+}
+
+.about-showroom {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.about-showroom-big {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.about-text{
+font-family: Roboto Condensed;
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.about-ist {
+width: 231px;
+height: 32px;
+margin-bottom: 20px;
+font-family: 'Roboto Condensed';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 100%;
+color: #000000;
+}
