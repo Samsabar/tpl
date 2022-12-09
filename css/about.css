@@ -166,10 +166,11 @@ p {
 .tab-button {
     display: flex;
     border: none;        
-    height: 56px;
+    height: auto;
+    font-weight: 600;
     width: 100%;
     background-color: transparent;    
-    justify-content: flex-start;    
+    justify-content: flex-start;     
 }
 
 .scroll-container {
