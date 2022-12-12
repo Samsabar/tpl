@@ -12,6 +12,14 @@ $('.navbar-toggler-icon').click(function () {
 	});
 });
 
+//Search close
+$(document).ready(function(){
+$('.search-icon').click(function () {
+	$(this).toggleClass('close');
+	});
+});
+
+
 $('.panel-collapse').on('shown.bs.collapse', function(e) {
   var $panel = $(this).closest('.panel');
   $('html,body').animate({
