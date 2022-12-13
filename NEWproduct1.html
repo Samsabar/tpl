@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css" href="css/font.css" />
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
 <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-<link rel="stylesheet" href="/css/tab.css">
+<link rel="stylesheet" href="css/tab.css">
 </head>
 <body>
 <header class="main-header">
@@ -105,7 +105,7 @@
       
 		<!-- Button trigger modal -->
 
-		<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">
+		<button type="button" class="btn btn-dark fixed-bottom position-absolute" data-toggle="modal" data-target="#myModal">
 			 <span>Обратная связь</span>
 		</button>
 
@@ -159,15 +159,21 @@
   </div>
  </div>
 </div>
-    <!--Tab's-->
-<ul class="tabs product_tabs">
-  <li data-target="#tech" class="tabs__item">Технические характеристики</li>
-  <li data-target="#configurator" class="tabs__item">Конфигуратор опций</li>
-  <li data-target="#load_materials" class="tabs__item">Материалы для загрузки</li>  
-</ul>
+
+<!--Tab's-->
+
+<div class="tab-content mt-5" id="myTabContent">
+  <div class="tab-pane fade show active" id="wmf" role="tabpanel" aria-labelledby="wmf-tab">
+   <div class="row no-gutters align-items-center brand-list-tab">
+    <div class="col">
+     <p data-target="#tech" class="product-tabs__item"><a>Технические характеристики</a></p>
+     <p data-target="#configurator" class="product-tabs__item"><a>Конфигуратор опций</a></p>
+     <p data-target="#load_materials" class="product-tabs__item"><a>Материалы для загрузки</a></p>
+    </div>   
+   </div>
 
 <ul class="content">
-  <li id="tech" class="content__item content__item--active">
+  <li id="tech" class="product-content__item product-content__item--active">
     <div id="accordionBodyOne" class="active" role="tabpanel" aria-labelledby="accordionHeadingOne" aria-expanded="false">    
       <div class="product-content-body">
         <div class="table-responsive product-table">
@@ -216,7 +222,7 @@
       </div>
     </div>
   </li>
-  <li id="configurator" class="content__item">
+  <li id="configurator" class="product-content__item">
     <div class="product-content-body">
       <p> * Производительность определялась по машине с фиксированной подачей воды и в зависимости от размера чашки, настроек, параметров мощности, конфигураций и номинальной производительности. Указана средняя рекомендованная производительность, оптимальная для работы кофемашины.</p>
       <p>** Система очистки кофемашины «Easy Clean» полностью автоматическая. При проведении очистки используйте чистящие таблетки и контейнер. Поместите чистящую таблетку в контейнер голубого цвета, установите его на место контейнера для молока. Машина автоматически подает воду в контейнер, растворяя таблетку, очищает систему подачи молока и тщательно ополаскивает контейнер водой и паром. Капучинатор необходимо очищать раз в неделю в ручном режиме, погружая в чистящую жидкость. </p>
@@ -225,8 +231,9 @@
     
     </div>
   </li>
-  <li id="load_materials" class="content__item">
+  <li id="load_materials" class="product-content__item">
     <div class="product-content-body">
+      <p>Материалы для загрузки</p>
       <p> * Производительность определялась по машине с фиксированной подачей воды и в зависимости от размера чашки, настроек, параметров мощности, конфигураций и номинальной производительности. Указана средняя рекомендованная производительность, оптимальная для работы кофемашины.</p>
       <p>** Система очистки кофемашины «Easy Clean» полностью автоматическая. При проведении очистки используйте чистящие таблетки и контейнер. Поместите чистящую таблетку в контейнер голубого цвета, установите его на место контейнера для молока. Машина автоматически подает воду в контейнер, растворяя таблетку, очищает систему подачи молока и тщательно ополаскивает контейнер водой и паром. Капучинатор необходимо очищать раз в неделю в ручном режиме, погружая в чистящую жидкость. </p>
       <p>*** Принцип функционирования системы очистки «Clean in Place» аналогичен системе «Easy Clean», однако система «Clean in Place» обладает преимуществом – нет необходимости перестановки контейнеров и ручной очистки капучинатора, кофемашина все сделает автоматически. </p>
