@@ -12,6 +12,7 @@ $('.navbar-toggler-icon').click(function () {
 	});
 });
 
+
 //Search close
 $(document).ready(function(){
 $('.search-icon').click(function () {
@@ -20,12 +21,6 @@ $('.search-icon').click(function () {
 });
 
 
-$('.panel-collapse').on('shown.bs.collapse', function(e) {
-  var $panel = $(this).closest('.panel');
-  $('html,body').animate({
-    scrollTop: $panel.offset().top
-  }, 700);
-});
 
 
 // Табы
