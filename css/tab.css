@@ -10,14 +10,14 @@
 }
 
 .tabs__item {
-    padding: 5px 10px;
+    /* padding: 5px 10px; */
     border: 1px solid transparent;
     cursor: pointer;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #f1f1f1;
 }
 
 .tabs__item--active {
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     border-bottom-color: transparent;
 }
 
@@ -36,6 +36,27 @@
 }
 
 
-.product_tabs {
-    margin-top: 15px;
-  }
+.product-tabs__item {
+    padding: 5px 10px;
+    cursor: pointer; 
+}
+
+.product-tabs__item--active {
+    border: none;
+    
+}
+
+.product-content {
+    list-style: none;
+    padding: 20px;
+
+}
+
+.product-content__item {
+    display: none;
+}
+
+.product-content__item--active {
+    display: block;
+}
+

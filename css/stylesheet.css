@@ -1171,6 +1171,7 @@ top: 70px;
 height: 70px;
 display: flex;
 justify-content: center;
+border-bottom: 1px solid;
 }
 .header-logo a{	
 align-self: center;

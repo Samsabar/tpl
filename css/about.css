@@ -1,10 +1,9 @@
 body {
     font-family: 'RobotoRegular', Arial, Verdana, Tahoma, sans-serif;	
-   
+   position: relative;
 }
 
-p {
-    src: url(fonts/);
+p {    
     font-size: 14px;
 }
 
@@ -39,8 +38,8 @@ p {
 }
 
 .about-ist {
-    width: 231px;
-    height: 32px;
+    /* width: 231px;
+    height: 32px; */
     margin-bottom: 20px;
     font-style: normal;
     font-weight: 500;
@@ -83,7 +82,6 @@ p {
 }
 
 .service-button {
-    z-index: -1;
     position: absolute;
     margin-top: 0;
     margin-bottom: 0;
@@ -98,16 +96,26 @@ p {
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 24.22%;    
-    width: 301px;
+    width: 70%;
     height: 57px;
-    background: #000000;  
+    background: #000000;
     border: 1px solid #000000;
+    color: #fff;
 }
 
-.service-p{
-    font-size: 1.1rem;
-    font-weight: 600;     
+
+.service-button:hover {
+-webkit-appearance: none;
+border: 1px solid #000;
+outline: 0;
+background: linear-gradient(270deg, #000000 21.35%, #686868 100%);
+/* background-size: 200% 100%; */
+transition: 0.3s;
+border-radius: 0; 
+-webkit-animation: bruh 3s linear infinite;
+animation: bruh 3s linear infinite;
 }
+
 
 .service-cert-img {
     height: auto;
@@ -115,15 +123,6 @@ p {
     vertical-align: middle;    
 }
 
-
-
-@media (min-width: 992px) {
-    .service-cert-img:hover{   
-        z-index: 1;    
-        transform: scale(1.8);        
-        margin-left: -10vw;
-    }
-}
 
 
 @media(max-width: 992px) {
@@ -222,3 +221,28 @@ p {
 .card-product-img-new{
     margin-bottom: 5px;
   }
+
+
+.main-office p{
+    font-size: large;    
+}
+
+
+.clients {
+    margin-bottom: 15px;
+}
+
+@media (min-width: 920px) {    
+.clients {
+    transform: translateY(-180px);
+    width: 90%;    
+}
+}
+
+
+.clients-logo .col {
+    border: 1px solid #F1F1F1;
+    padding-top: 15px;
+    background-color:#FFFFFF;
+}
+
